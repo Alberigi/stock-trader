@@ -1,5 +1,3 @@
-import dataStocks from '@/data/stocks'
-
 export default {
     state: {
         stocks: []
@@ -17,9 +15,6 @@ export default {
     actions: {
         buyStock({ commit }, order) {
             commit('buyStock', order)
-        },
-        initStocks({ commit }) {
-            commit('setStocks', dataStocks)
         },
         randomizeStocks({ commit }) {
             commit('randomizeStocks')
