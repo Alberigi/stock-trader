@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar app>
+  <v-toolbar app class="green darken-3">
     <v-toolbar-title class="headline text-uppercase mr-4">
       <span>Stock</span>
       <span class="font-weight-light">Trader</span>
@@ -24,7 +24,7 @@
         </v-list>
       </v-menu>
       <v-layout align-center>
-        <span class="text-uppercase grey--text text--darken-2"
+        <span class="text-uppercase text--darken-2"
           >Saldo: {{ funds | currency }}</span
         >
       </v-layout>
@@ -45,8 +45,8 @@ export default {
       this.randomizeStocks();
     },
     saveData() {
-      const { funds, stockPortfolio, getStocks } = this.$store.getters;
-      this.$http.put("data.json", { funds, stockPortfolio, getStocks });
+      const { funds, stocksPortfolio, getStocks } = this.$store.getters;
+      this.$http.put("data.json", { funds, stocksPortfolio, getStocks });
     },
     loadDataLocal() {
       this.loadData();

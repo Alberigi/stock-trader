@@ -4,7 +4,7 @@
   </v-layout>
 </template>
 <script>
-import Stock from "./Stock.vue";
+import Stock from "../components/stocks/Stock.vue";
 export default {
   components: {
     Stock,

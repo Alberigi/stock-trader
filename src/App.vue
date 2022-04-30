@@ -4,8 +4,8 @@
       <v-container>
             <Header/>
             <transition name="slide" mode="out-in">
+              <router-view></router-view>
             </transition>
-        <router-view></router-view>
       </v-container>
     </v-content>
   </v-app>

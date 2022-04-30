@@ -5,7 +5,7 @@
 </template>
 <script>
 import {mapGetters} from 'vuex'
-import Stock from "./Stock.vue";
+import Stock from "../components/portfolio/Stock.vue";
 export default {
   components: {
     Stock,
