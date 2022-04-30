@@ -1,6 +1,6 @@
 <template>
   <v-flex class="pr-3 pb-3" xs12 md6 lg4>
-    <v-card class="green darken-3 white--text">
+    <v-card class="green darken-3 white--text card-top">
       <v-card-title class="headline">
         <strong
           >{{ stock.name
@@ -10,11 +10,11 @@
         >
       </v-card-title>
     </v-card>
-    <v-card>
+    <v-card class="card-bottom">
       <v-container fill-height>
         <v-text-field label="Quantidade" type="number" v-model.number="qtd" />
         <v-btn
-          class="green darken-3 white--text"
+          class="green darken-3 white--text button"
           @click="submit"
           :disabled="invalidButton"
           >{{ buttonText }}</v-btn
@@ -75,3 +75,14 @@ export default {
   },
 };
 </script>
+<style scoped>
+  .card-top {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .card-bottom {
+    border-radius: 0px 0px 10px 10px;
+  }
+  .button {
+    border-radius: 10px;
+  }
+</style>

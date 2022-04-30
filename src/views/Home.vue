@@ -1,13 +1,13 @@
 <template>
   <div>
     <h1>Negocie sua ações</h1>
-    <v-sheet :elevation="6" class="pa-2 primary">
+    <v-sheet :elevation="6" class="pa-2 primary border">
       <v-icon class="white--text mr-3">info</v-icon>
       <span class="headline white--text font-weight-light">
         Você pode Salvar & Carregar os Dados
       </span>
     </v-sheet>
-    <v-sheet :elevation="6" class="pa-2 success darken-1 mt-3">
+    <v-sheet :elevation="6" class="pa-2 success darken-1 mt-3 border">
       <v-icon class="white--text mr-3">info</v-icon>
       <span class="headline white--text font-weight-light">
         Você pode Salvar & Carregar os Dados
@@ -29,3 +29,8 @@ export default {
     }
 };
 </script>
+<style scoped>
+  .border {
+    border-radius: 10px;
+  }
+</style>
