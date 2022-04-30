@@ -8,8 +8,6 @@ export default {
     },
     loadData({ commit }) {
         Vue.prototype.$http.get('data.json').then(res => {
-            // eslint-disable-next-line no-console
-            console.log(res.data)
             commit('setStocks', res.data.getStocks)
             commit('setPortfolio', {
                 stocks : res.data.stocksPortfolio ? res.data.stocksPortfolio : [],
